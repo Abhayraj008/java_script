@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+.circle{
+      position:absolute;
+      height: 50px;
+      width:50px;
+         border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 1;
+      font-size: 28px;
+      color:white;      
+      overflow:hidden;
+      animation:pop 5s forwards;
+}
+
+@keyframes pop{
+  0%{ 
+    transform: scale(1);
+    opacity: 1;
+}
+100%{ 
+    transform: scale(2);
+    opacity: 0;
+ }
+}

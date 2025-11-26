@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(136, 164, 164);
+}
+
+.red{
+    height: 100px;
+    width:100px;
+    background-color: red;
+}
+
+.blue{
+          height: 100px;
+    width:100px;
+        background-color: blue;
+}
+
+.green{
+      height: 100px;
+    width:100px;
+        background-color: green;
+}
+
+.yellow{
+      height: 100px;
+    width:100px;
+    background-color: yellow;
+}
+
+.orange{
+      height: 100px;
+    width:100px;
+    background-color: orange;
+}
+

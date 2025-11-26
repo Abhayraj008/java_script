@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    background-color: rgb(236, 235, 233);
+}
+
+#container{
+    display:grid;
+    height:71%;
+    width:30%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,8rem);
+     border: 5px solid rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+    padding:15px;
+    gap:8px;
+    border-radius: 5%;
+    border: none;
+}  
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size:38px;
+    border: 2px solid rgb(255, 248, 248);
+    background-color:rgb(253, 253, 253);
+    text-align: center;
+    border-radius: 7%;
+    cursor: pointer;
+   transition: transform 0.3s ease;
+}
+
+#btn{
+    border:none;
+    background-color: blue;
+    height:40px;
+    border-radius: 3%;
+    padding:5px;
+    width:120px;
+    position: relative;
+    text-align: center;
+    left:140px;
+      font-size: 20px;
+      top:10px;
+}
+
+#para{
+    /* background-color: red; */
+    color:black;
+    position:relative;
+    top:54px;
+    color:black;
+    font-size:25px;
+}
+
+.box:hover{
+   border:8px solid rgb(254, 254, 254);
+   border:none;
+   transform: scale(1.1);
+    
+}
+.left {
+    position: absolute;
+    left: 100px;
+    transition: transform 0.3s ease;
+}
+
+.right {
+    position: absolute;
+    right: 100px;
+    transition: transform 0.3s ease;
+}
+
+img{
+    height:42vh;
+    width:17vw;
+}
+
+/* Highlight active user */
+.activeUser {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/* By default thoda fade rakho */
+.left img, .right img {
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+/* User hover colours */
+.user1Hover {
+    background-color: rgba(0, 100, 255, 0.2) !important;
+}
+
+.user2Hover {
+    background-color: rgba(255, 0, 100, 0.2) !important;
+}
